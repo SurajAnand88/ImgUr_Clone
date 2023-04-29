@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script
+      src="https://kit.fontawesome.com/6c1f5c4092.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/navbar.js" type="module" defer></script>
+    <script src="./js/index.js" type="module" defer></script>
+    <title>Imgur</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav">
+        <div class="nav-inner">
+          <img
+            src="https://www.fastly.com/cimages/6pk8mg3yh2ee/6jvZ13EgIEa0gow2oeqi4M/f4b2ca2d2a6bd178c3a6b134fcc43a5e/imgur_2x.png"
+            alt="logo"
+            class="nav-img"
+          />
+
+          <button class="green-btn">
+            <i class="fa-regular fa-square-plus"></i>
+            New post
+          </button>
+        </div>
+
+        <div class="inp">
+          <input
+            type="text"
+            name="searchbar"
+            placeholder="Images, #tags, @users oh my!"
+            id="search"
+          />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="nav-inner">
+          <div><button class="blue-btn">Go Ad Free</button></div>
+          <div><button class="black-btn">Sign In</button></div>
+          <div><button class="green-btn">Sign up</button></div>
+        </div>
+      </div>
+
+      <div class="center">
+        <h2>Never be bored again.</h2>
+      </div>
+      <div class="tags">
+        <button class="trans-btn">EXPLORE TAGS</button>
+        <button class="trans-btn">
+          MORE TAGS <i class="fa-regular fa-square-plus"></i>
+        </button>
+      </div>
+      <div id="tags"></div>
+    </nav>
+
+    <!-- =================bodyStart================ -->
+    <div class="container">
+      <div class="main"></div>
+      <div class="pagination">
+        <button class="green-btn" id="pre">Pre</button>
+        <button class="green-btn" id="next">Next</button>
+      </div>
+    </div>
+
+    <!-- =================bodyEnd================ -->
+  </body>
+</html>
